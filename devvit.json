@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "orbit-daily",
+  "post": {
+    "dir": "src/client",
+    "entry": "index.html"
+  },
+  "server": {
+    "dir": "src/server",
+    "entry": "index.ts"
+  },
+  "permissions": {
+    "redis": true,
+    "reddit": true
+  },
+  "menu": {
+    "items": [
+      { "label": "Create ORBIT daily post", "location": "subreddit", "endpoint": "/internal/menu/create-post" }
+    ]
+  }
+}

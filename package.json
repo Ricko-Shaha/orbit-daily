@@ -1,0 +1,20 @@
+{
+  "name": "orbit-daily",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "description": "ORBIT — a one-button daily skill game for Reddit. Same seeded board for the whole subreddit each day; community leaderboard; built on Devvit Web + Phaser.",
+  "scripts": {
+    "test": "node --experimental-strip-types test/run.ts",
+    "//dev": "Use the Devvit CLI for the real app: `devvit playtest <your-subreddit>`",
+    "dev": "devvit playtest",
+    "upload": "devvit upload"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1"
+  }
+}
